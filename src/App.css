@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
-}
+#App {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #203273;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#App div.sombra {
+  width: 544px;
+  height: 544px;
+
+  border-radius: 73px;
+
+  background: #3C4142;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#App div.card-numbers {
+  width: 544px;
+  height: 544px;
+
+  background: #ECECEC;
+  border-radius: 73px;
+
+  margin-top: -564px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parte-1 {
+	grid-area: parte-1;
+}
+
+.parte-2 {
+	grid-area: parte-2;
+  
+}
+.parte-3 {
+	grid-area: parte-3;
+  
+}
+.parte-4 {
+	grid-area: parte-4;
+  
+}
+.parte-5 {
+	grid-area: parte-5;
+  
+}
+.parte-6 {
+	grid-area: parte-6;
+  
+}
+.parte-7 {
+	grid-area: parte-7;
+  
+}
+.parte-8 {
+	grid-area: parte-8;
+  
+}
+.parte-0 {
+	grid-area: parte-0;
+  
+}
+
+#App div.card-numbers div.grade {
+  width: 88%;
+  height: 88%;
+  border: 1.14035px solid #ADABAB;
+
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+		"parte-1 parte-2 parte-3"
+		"parte-4 parte-5 parte-6"
+		"parte-7 parte-8 parte-0"
+		;
+}
+
+
+
+#App div.buttons {
+  margin-top: 35px;
+  display: flex;
+  
+  width: 52%;
+  
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#App div.buttons .button-shadow {
+  width: 140px;
+  height: 40px;
+  background: #021723;
+  border-radius: 30px;
+}
+
+#App div.buttons .button-shadow button{
+  width: 100%;
+  height: 100%;
+  
+  margin-top: -5px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  background: #BA3454;
+
+  font-family: 'Orelega One', cursive;
+  font-style: normal;
+  font-weight: normal;  
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#App div.buttons .button-shadow button.button-click {
+  width: 100%;
+  height: 100%;
+  
+  margin-top: 0px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  background: #BA3454;
+
+  font-family: 'Orelega One', cursive;
+  font-style: normal;
+  font-weight: normal;  
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#App div.buttons .button-shadow button#button-green {
+  background: #34BA6A;
 }
